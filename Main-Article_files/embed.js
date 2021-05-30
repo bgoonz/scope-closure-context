@@ -26,10 +26,10 @@ var Embed = function () {
       hl: document.querySelector(".hl"),
       pre: document.querySelectorAll("pre"),
       run: document.querySelector("#click-to-run .ctrCont"),
-      embed: document.querySelector("#full-embed")
+      embed: document.querySelector("#full-embed"),
     };
 
-    if (this.elements.embed){
+    if (this.elements.embed) {
       this.setupEvents();
       eachElement(this.elements.pre, function (element) {
         hljs.highlightBlock(element);
@@ -41,9 +41,9 @@ var Embed = function () {
     }
 
     // specific to the standalone embed
-    if (this.elements.run){
-      self = this
-      this.elements.run.addEventListener("click", function (event){
+    if (this.elements.run) {
+      self = this;
+      this.elements.run.addEventListener("click", function (event) {
         self.loadResult();
         self.elements.run.parentNode.remove();
       });
@@ -123,7 +123,13 @@ var Embed = function () {
       iframe.parentNode.removeChild(iframe);
     });
 
-    var sandboxAttrs = ["allow-forms", "allow-scripts", "allow-same-origin", "allow-top-navigation-by-user-activation", "allow-downloads"];
+    var sandboxAttrs = [
+      "allow-forms",
+      "allow-scripts",
+      "allow-same-origin",
+      "allow-top-navigation-by-user-activation",
+      "allow-downloads",
+    ];
 
     // don't allow alerts/confirms in fiddle listing on jsfiddle.net
     if (document.location.search.indexOf("disableModals") === -1) {
@@ -137,7 +143,8 @@ var Embed = function () {
     resultsFrame.allowpaymentrequest = true;
     resultsFrame.frameBorder = "0";
     resultsFrame.sandbox = sandboxAttrs.join(" ");
-    resultsFrame.allow = "midi; geolocation; microphone; camera; display-capture; encrypted-media;";
+    resultsFrame.allow =
+      "midi; geolocation; microphone; camera; display-capture; encrypted-media;";
     resultCont.appendChild(resultsFrame);
 
     if (callback) {
@@ -155,9 +162,8 @@ var Embed = function () {
     this.repositionHighlight(action, true);
 
     // set active state for tabs
-    var actionParent = action.parentElement.parentElement.querySelectorAll(
-      "li"
-    );
+    var actionParent =
+      action.parentElement.parentElement.querySelectorAll("li");
     eachElement(this.elements.tabs, function (element) {
       element.classList.remove("active");
     });

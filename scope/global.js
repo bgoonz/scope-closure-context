@@ -1,31 +1,29 @@
-var hello='Hello';
-var hello='Hello +';//mala practica
+var hello = "Hello";
+var hello = "Hello +"; //mala practica
 
-let work='Hello Work';
-// let work='Hello Work+';//esto no es posible ya que let no puede ser reasigmada 
+let work = "Hello Work";
+// let work='Hello Work+';//esto no es posible ya que let no puede ser reasigmada
 
-
-const helloWork='Hello Work';
+const helloWork = "Hello Work";
 console.log(hello);
-const anotherFunction=()=>{
-    console.log(hello);
-    console.log(work);
-    console.log(helloWork);
-}
+const anotherFunction = () => {
+  console.log(hello);
+  console.log(work);
+  console.log(helloWork);
+};
 
 anotherFunction();
 
-const helloWork =()=>{
-globalVar='im global'
-}
+const helloWork = () => {
+  globalVar = "im global";
+};
 
 helloWork();
-console.log(globalVar)
+console.log(globalVar);
 
+const anotherFunction = () => {
+  var localvar = (globalVar = "im global");
+};
 
-const anotherFunction =()=>{
-   var localvar= globalVar='im global'
-    }
-    
-    anotherFunction();
-    console.log(globalVar)
+anotherFunction();
+console.log(globalVar);
