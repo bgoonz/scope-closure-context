@@ -17,7 +17,11 @@ body {
   position: relative;
   min-height: 100vh;
 }
-
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
 h1,
 h2,
 h3,

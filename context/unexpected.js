@@ -1,7 +1,7 @@
 let dog = {
-  name: 'Bowser',
+  name: "Bowser",
   changeName: function () {
-    this.name = 'Layla';
+    this.name = "Layla";
   },
 };
 
@@ -19,7 +19,7 @@ global.setTimeout() : popular method of setting a function to run on a timer.
 
 */
 let hello = function () {
-  console.log('hello!');
+  console.log("hello!");
 };
 
 // global. is a method of the global object!
@@ -36,7 +36,7 @@ Changing Context using Bind
 */
 let cat = {
   purr: function () {
-    console.log('meow');
+    console.log("meow");
   },
   purrMore: function () {
     this.purr();

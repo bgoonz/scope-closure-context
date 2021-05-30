@@ -9,10 +9,7 @@ var obj = {
   },
 };
 
-obj.foo () === obj; // true
-
-
-
+obj.foo() === obj; // true
 
 /*
 The same principle applies when invoking a function with the new operator to create an instance of an object. When invoked in this manner, the value of this within the scope of the function will be set to the newly created instance:
@@ -20,15 +17,12 @@ The same principle applies when invoking a function with the new operator to cre
 
 */
 
-function foo () {
-  alert (this);
+function foo() {
+  alert(this);
 }
 
-foo (); // window
-new foo (); // foo
-
-
-
+foo(); // window
+new foo(); // foo
 
 /*
 When called as an unbound function, this will default to the global context or window object in the browser. However, if the function is executed in strict mode, the context will default to undefined.
@@ -36,27 +30,17 @@ When called as an unbound function, this will default to the global context or w
 
 */
 
-
-
-
-
 /*
 
 
 
 */
 
-
-
-
 /*
 
 
 
 */
-
-
-
 
 /*
 
