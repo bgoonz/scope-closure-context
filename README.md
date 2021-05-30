@@ -56,8 +56,7 @@ Quiz yourself with this website I made:
 ### I am going to try something new this article… it’s called **spaced repetition.**
 
 > [\*\*“Spaced repetition](https://en.wikipedia.org/wiki/Spaced_repetition)** is an [evidence-based learning](https://en.wikipedia.org/wiki/Evidence-based_learning) technique that is usually performed with [flashcards](https://en.wikipedia.org/wiki/Flashcard). Newly introduced and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological [spacing effect](https://en.wikipedia.org/wiki/Spacing_effect). The use of spaced repetition has been proven to increase rate of learning.”
-> [**Spaced repetition — Wikipedia\*\*
-> *Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced…*en.wikipedia.org](https://en.wikipedia.org/wiki/Spaced_repetition)
+> [**Spaced repetition — Wikipedia\*\* > *Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced…*en.wikipedia.org](https://en.wikipedia.org/wiki/Spaced_repetition)
 
 ## CodePen For You To Practice With:
 

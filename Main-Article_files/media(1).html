@@ -6128,12 +6128,10 @@
                     this.brandColor &&
                       (c.style.borderBottom = ".5rem solid " + this.brandColor),
                     c.appendChild(h);
-                  var n = i
-                    .display()
-                    .display(this.data.image, {
-                      key: "5b4f224fb4324b0ea66ced88b214e1aa",
-                      animate: !1,
-                    });
+                  var n = i.display().display(this.data.image, {
+                    key: "5b4f224fb4324b0ea66ced88b214e1aa",
+                    animate: !1,
+                  });
                   return (
                     (h.style.backgroundImage = "url(" + n + ")"),
                     b || c.appendChild(f),
@@ -6176,13 +6174,11 @@
                   var b = e.create("a", { href: "#", class: "progressive" }),
                     c = e.create("div", { class: "play-button" }),
                     f = e.create("img", {
-                      src: i
-                        .display()
-                        .resize(this.data.image, {
-                          key: "5b4f224fb4324b0ea66ced88b214e1aa",
-                          animate: !1,
-                          width: 50,
-                        }),
+                      src: i.display().resize(this.data.image, {
+                        key: "5b4f224fb4324b0ea66ced88b214e1aa",
+                        animate: !1,
+                        width: 50,
+                      }),
                     });
                   b.appendChild(c), b.appendChild(f), a.appendChild(b);
                   var g = !1,
@@ -13536,15 +13532,13 @@
                                   if (
                                     (void 0 === g &&
                                       ((g = new q["default"](this.player_)),
-                                      g
-                                        .contentEl()
-                                        .appendChild(
-                                          s.createEl("li", {
-                                            className: "vjs-menu-title",
-                                            innerHTML: w["default"](this.kind_),
-                                            tabIndex: -1,
-                                          })
-                                        )),
+                                      g.contentEl().appendChild(
+                                        s.createEl("li", {
+                                          className: "vjs-menu-title",
+                                          innerHTML: w["default"](this.kind_),
+                                          tabIndex: -1,
+                                        })
+                                      )),
                                     b)
                                   ) {
                                     for (
@@ -15298,17 +15292,15 @@
                                   var a = new m["default"](this.player_);
                                   if (
                                     (this.options_.title &&
-                                      a
-                                        .contentEl()
-                                        .appendChild(
-                                          o.createEl("li", {
-                                            className: "vjs-menu-title",
-                                            innerHTML: s["default"](
-                                              this.options_.title
-                                            ),
-                                            tabIndex: -1,
-                                          })
-                                        ),
+                                      a.contentEl().appendChild(
+                                        o.createEl("li", {
+                                          className: "vjs-menu-title",
+                                          innerHTML: s["default"](
+                                            this.options_.title
+                                          ),
+                                          tabIndex: -1,
+                                        })
+                                      ),
                                     (this.items = this.createItems()),
                                     this.items)
                                   )
